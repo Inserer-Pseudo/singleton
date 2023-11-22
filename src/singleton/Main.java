@@ -3,8 +3,7 @@ package singleton;
 public class Main {
 
 	public static void main(String[] args) {
-		Stock monStock = new Stock();
-		new EditorGui(monStock);
-		new EditorGui(monStock);
+		EditorGui gui1 = new EditorGui();
+		EditorGui gui2 = new EditorGui();
 	}
 }
