@@ -11,8 +11,8 @@ public class EditorGui implements ActionListener {
 	private JTextField m_ctrl;
 	private Stock m_stock;
 
-	public EditorGui(Stock _stock) {
-		m_stock = _stock;
+	public EditorGui() {
+		m_stock = Stock.getInstance();
 		JFrame frame = new JFrame("Editor");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		m_ctrl = new JTextField(20);
